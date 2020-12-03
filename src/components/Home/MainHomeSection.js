@@ -17,7 +17,7 @@ const MainHomeSection = () => {
         </motion.h2>
         <motion.h2 variants={fade}>I'm a front-end web developer </motion.h2>
         <motion.h2 variants={fade}>
-          specalized in <span>react</span>.
+          specalized in <span>React</span>.
         </motion.h2>
         <motion.p variants={fade}>
           I can assist with your website needs.
@@ -28,9 +28,7 @@ const MainHomeSection = () => {
 
         <motion.button variants={fade}>Contact</motion.button>
       </motion.div>
-      <div className="about-img">
-        <img></img>
-      </div>
+      <div className="about-img"></div>
     </StyledAbout>
   );
 };

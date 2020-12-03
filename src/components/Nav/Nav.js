@@ -27,6 +27,10 @@ const Nav = () => {
           <Link to="journal">Journal</Link>
           <Line pathname={pathname} routename={"/journal"} />
         </li>
+        <li>
+          <Link to="contact">Contact</Link>
+          <Line pathname={pathname} routename={"/contact"} />
+        </li>
       </ul>
     </StyledNav>
   );

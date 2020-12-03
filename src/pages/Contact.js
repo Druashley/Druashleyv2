@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import MainHomeSection from "../components/Home/MainHomeSection.js";
+import MainContactSection from "../components/Contact/MainContactSection";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
-const Home = () => {
+
+const Contact = () => {
   return (
     <motion.div
       variants={pageAnimation}
@@ -11,10 +12,10 @@ const Home = () => {
       animate="show"
       exit="exit"
     >
-      <MainHomeSection />
+      <MainContactSection />
       <ScrollTop />
     </motion.div>
   );
 };
 
-export default Home;
+export default Contact;
