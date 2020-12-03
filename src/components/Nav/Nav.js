@@ -48,6 +48,7 @@ const StyledNav = styled(motion.div)`
   a {
     text-decoration: none;
     color: #ccc;
+    font-size: 1.4rem;
   }
   ul {
     list-style: none;
@@ -59,19 +60,20 @@ const StyledNav = styled(motion.div)`
   }
   #logo {
     font-family: "Permanent Marker", cursive;
-    font-size: 1.66rem;
+    font-size: 1.75rem;
     font-weight: lighter;
   }
 
   @media (max-width: 1300px) {
+    min-height: 5vh;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem 2rem 0rem;
     #logo {
       display: inline-block;
       margin: 2rem;
     }
     ul {
-      padding: 2rem;
+      font-size: 1rem;
       justify-content: space-around;
       width: 100%;
       li {

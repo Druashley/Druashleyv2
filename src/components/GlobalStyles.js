@@ -13,12 +13,12 @@ html{
 
 body {
     background: #1b1b1b;
-    font-family: 'Inter', sans-serif;
+    font-family: "Playfair Display", serif;
     overflow-x: hidden;
 }
 
 button {
-    font-family: 'Inter', sans-serif;
+    font-family: "Playfair Display", serif;
     font-weight: bold;
     font-weight: 1.1rem;
     cursor: pointer;
