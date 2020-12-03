@@ -1,1 +1,1 @@
-This is my second attempt at a person portfolio website using react.
+This is my second attempt at a personal portfolio website using react.

@@ -1,7 +1,11 @@
+import GlobalStyles from "./components/GlobalStyles";
+import Nav from "./components/Nav/Nav";
+
 function App() {
   return (
     <div className="App">
-      <h1>Druashley</h1>
+      <GlobalStyles />
+      <Nav />
     </div>
   );
 }
