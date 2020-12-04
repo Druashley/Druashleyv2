@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { titleAnim, fade, container } from "../../animation";
 
 const MainHomeSection = () => {
@@ -25,8 +26,9 @@ const MainHomeSection = () => {
         <motion.p variants={fade}>
           Let<span>'</span>s build something together.
         </motion.p>
-
-        <motion.button variants={fade}>Contact</motion.button>
+        <Link to="contact">
+          <motion.button variants={fade}>Contact</motion.button>
+        </Link>
       </motion.div>
       <div className="about-img"></div>
     </StyledAbout>
@@ -48,11 +50,11 @@ const StyledAbout = styled(motion.div)`
     padding: 2rem 2rem;
     text-align: center;
     h2 {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
     p {
       padding: 0.75rem 0rem;
-      font-size: 1rem;
+      font-size: 1.75rem;
     }
   }
 
@@ -65,7 +67,7 @@ const StyledAbout = styled(motion.div)`
     }
     p {
       padding: 0.5rem 0rem;
-      font-size: 0.85rem;
+      font-size: 1.25rem;
     }
   }
 `;

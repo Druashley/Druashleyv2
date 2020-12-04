@@ -7,9 +7,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xnqobyya");
   if (state.succeeded) {
-    return (
-      <p>Thank you for the message. I will reply within as soon as possible.</p>
-    );
+    return <p>Thank you for the message. I will reply as soon as possible.</p>;
   }
   return (
     <StyledForm onSubmit={handleSubmit}>
@@ -30,14 +28,14 @@ function ContactForm() {
 const StyledForm = styled.form`
   background: #6e6d6d;
   min-height: 25vh;
-  width: 50%;
+  min-width: 50%;
   border: 2px solid black;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
-  margin: 2rem 10rem;
+  margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  color: white;
   border-radius: 1rem;
   padding: 1rem 2rem;
   label {
@@ -62,6 +60,8 @@ const StyledForm = styled.form`
   }
 
   @media (max-width: 1300px) {
+    margin: 2rem 0rem;
+    width: 80%;
     button {
       margin: 1rem 0rem 0rem 70%;
       display: flex;
@@ -73,9 +73,10 @@ const StyledForm = styled.form`
   }
 
   @media (max-width: 700px) {
+    width: 90%;
     button {
-      margin: 1rem 0rem 0rem 0rem;
-      width: 100%;
+      margin: 1rem 0rem 0rem 50%;
+      width: 45%;
     }
   }
 `;

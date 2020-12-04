@@ -17,6 +17,12 @@ const StyledContact = styled(motion.div)`
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+
+  @media (max-width: 700px) {
+  }
 `;
 
 export default MainContactSection;
