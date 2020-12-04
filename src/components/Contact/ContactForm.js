@@ -47,8 +47,6 @@ const StyledForm = styled.form`
 
   textarea {
     resize: none;
-    word-wrap: break-word;
-    overflow: hidden;
   }
   button {
     margin: 1rem 0rem 0rem 70%;

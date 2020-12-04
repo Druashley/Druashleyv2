@@ -27,11 +27,11 @@ button {
     border-radius: 2rem;
     font-size: 1rem;
     background: transparent;
-    color: white;
+    color: #ccc;
     transition: all 0.5s ease;
     &:hover {
         background-color:  #cf347c;
-        color: white;
+        color: #ccc;
     } 
 }
 
