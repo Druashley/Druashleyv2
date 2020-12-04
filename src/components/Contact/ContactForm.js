@@ -26,11 +26,11 @@ function ContactForm() {
 }
 
 const StyledForm = styled.form`
-  background: #6e6d6d;
+  background: #222222;
   min-height: 25vh;
   min-width: 50%;
   border: 2px solid black;
-  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 30px rgba(207, 52, 124, 0.21);
   margin: 2rem 1rem;
   display: flex;
   flex-direction: column;
