@@ -3,6 +3,7 @@ import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./components/Projects/ProjectDetail";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/projects" exact>
             <Projects />
+          </Route>
+          <Route path="/projects/:id">
+            <ProjectDetail />
           </Route>
         </Switch>
       </AnimatePresence>

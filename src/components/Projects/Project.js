@@ -1,19 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const Project = ({ title, featureOne, featureTwo, featureThree, mainImg }) => {
+const Project = ({
+  title,
+  featureOne,
+  featureTwo,
+  featureThree,
+  mainImg,
+  id,
+  projects,
+  url,
+}) => {
   return (
-    <StyledProject style={{ backgroundImage: mainImg }}>
-      <div className="project-title">{title}</div>
-      <div className="test-div">
-        <img src={mainImg} alt={`${title} image`}></img>
-        <ul>
-          <li className="project-feature ">{featureOne}</li>
-          <li className="project-feature ">{featureTwo}</li>
-          <li className="project-feature ">{featureThree}</li>
-        </ul>
-      </div>
+    <StyledProject style={{ backgroundImage: mainImg }} id={id}>
+      <Link projects={projects} to={`/projects/${url}`}>
+        <div className="project-title">{title}</div>
+        <div className="test-div">
+          <img src={mainImg} alt={`${title} image`}></img>
+          <ul>
+            <li className="project-feature ">{featureOne}</li>
+            <li className="project-feature ">{featureTwo}</li>
+            <li className="project-feature ">{featureThree}</li>
+          </ul>
+        </div>
+      </Link>
     </StyledProject>
   );
 };
@@ -24,9 +36,12 @@ const StyledProject = styled(motion.div)`
   border: 2px solid #cf347c;
   border-radius: 1rem;
   box-shadow: 0px 0px 30px rgba(207, 52, 124, 0.479);
-  color: #ccc;
   position: relative;
   cursor: pointer;
+  a {
+    color: #ccc;
+    text-decoration: none;
+  }
   &:hover {
     ul {
       opacity: 1;

@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import Project from "./Project";
 import projectData from "./ProjectData";
+
 const ProjectList = () => {
   const [projects, setProjects] = useState(projectData());
+
   return (
     <div className="project-container">
       <StyledProjectList className="projects">
@@ -17,6 +19,9 @@ const ProjectList = () => {
                 featureThree={project.featureThree}
                 mainImg={project.mainImg}
                 key={project.id}
+                id={project.id}
+                projects={projects}
+                url={project.url}
               />
             ))
           : ""}

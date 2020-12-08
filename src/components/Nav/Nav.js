@@ -7,6 +7,7 @@ import Line from "./NavLine";
 
 const Nav = () => {
   const { pathname } = useLocation();
+
   return (
     <StyledNav>
       <h1>
