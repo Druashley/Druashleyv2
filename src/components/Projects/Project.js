@@ -18,7 +18,7 @@ const Project = ({
       <Link projects={projects} to={`/projects/${url}`}>
         <div className="project-title">{title}</div>
         <div className="test-div">
-          <img src={mainImg} alt={`${title} image`}></img>
+          <img src={mainImg} alt={`${title}`}></img>
           <ul>
             <li className="project-feature ">{featureOne}</li>
             <li className="project-feature ">{featureTwo}</li>

@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import projectImgs from "./ProjectImgs";
+import React from "react";
 
 function projectData() {
   return [
@@ -15,7 +16,7 @@ function projectData() {
       github: "https://github.com/Druashley/Druashleyv2",
       url: "portfolio-website",
       description:
-        "This is my main website and a hub for everything I have created. ",
+        "This is my main website and a hub for everything I have created. The backend is using nginx on a vultur. I used React to make the project more responsive and app-like. This was my first project after getting back into front-end web development. I have redux setup for the backend in case I want to pass around data. I used Framer-Motion to apply animations to the website. This package has been great to work with. The more time I spend with it, the more I like it. Styled components are probably an overkill for a project this small. I used styled components because it is used a lot in the industry and I wanted to become familar with it. ",
     },
     {
       title: "Journal",

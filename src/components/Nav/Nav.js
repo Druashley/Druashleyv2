@@ -17,19 +17,19 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="projects">Projects</Link>
+          <Link to="/projects">Projects</Link>
           <Line pathname={pathname} routename={"/projects"} />
         </li>
         <li>
-          <Link to="resume">Resume</Link>
+          <Link to="/resume">Resume</Link>
           <Line pathname={pathname} routename={"/resume"} />
         </li>
         <li>
-          <Link to="journal">Journal</Link>
+          <Link to="/journal">Journal</Link>
           <Line pathname={pathname} routename={"/journal"} />
         </li>
         <li>
-          <Link to="contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
           <Line pathname={pathname} routename={"/contact"} />
         </li>
       </ul>
