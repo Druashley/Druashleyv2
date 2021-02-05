@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-production": "react-scripts build && scp -r ./build/* root@druashley.com:/var/www/homebase"
+    "deploy-production": "react-scripts build && scp -r ./build/* root@druashley.com:/var/www/druashley.com/html"
   },
   "eslintConfig": {
     "extends": [

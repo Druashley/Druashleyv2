@@ -3,6 +3,7 @@ import projectpage from "../../img/projectpage-setup-v1.png";
 import portfolioSvg from "../../img/code.svg";
 import data from "../../img/data.svg";
 import book from "../../img/book.svg";
+import pmiPage from "../../img/pmi-picture.png";
 
 const projectImgs = {
   portfolio: {
@@ -12,7 +13,7 @@ const projectImgs = {
   },
   portfolioTwo: {
     main: book,
-    secondary: projectpage,
+    secondary: pmiPage,
     third: homepage,
   },
   portfolioThree: {
