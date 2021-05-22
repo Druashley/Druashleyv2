@@ -12,6 +12,7 @@ function projectData() {
       secondaryImg: projectImgs.portfolio.secondary,
       id: uuidv4(),
       active: false,
+      demo: "https://www.druashley.com",
       github: "https://github.com/Druashley/Druashleyv2",
       url: "portfolio-website",
       description:
@@ -27,6 +28,7 @@ function projectData() {
       id: uuidv4(),
       active: false,
       github: "https://github.com/Druashley/PMI-Soundboard",
+      demo: "https://druashley.github.io/PMI-Soundboard/",
       url: "pmi-soundboard",
       description:
         "This a react app focused on my favorite online show called The Pat Mcafee Show. I have created a soundboard, featuring many clips for each personality on the show. I used Tailwind CSS for styling. Audacity is a program I used to clip sounds from the show. Getting the audio has been the most time consuming part of the project and I intend to add more as time goes. I found an NPM package called useSound to handle the audio clips. It is a wonderful package and I will use it again the future.",

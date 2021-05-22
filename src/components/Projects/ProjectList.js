@@ -22,6 +22,7 @@ const ProjectList = () => {
                 id={project.id}
                 projects={projects}
                 url={project.url}
+                demo={project.demo}
               />
             ))
           : ""}

@@ -29,9 +29,18 @@ const ProjectDetail = () => {
           </div>
           <p>{projectDetail.description}</p>
           <div className="feature-title">
-            <a href={projectDetail.github} target="_blank" rel="noreferrer">
-              Features & Github <img src={gitHub} alt="Github Link"></img>
-            </a>
+            <div className="link-container">
+              <div>
+                <a href={projectDetail.github} target="_blank" rel="noreferrer">
+                  Features & Github <img src={gitHub} alt="Github Link"></img>
+                </a>
+              </div>
+              <div>
+                <a href={projectDetail.demo} target="_blank">
+                  See live demo
+                </a>
+              </div>
+            </div>
             <div className="feature-container">
               <h3>{projectDetail.featureOne}</h3>
               <h3>{projectDetail.featureTwo}</h3>
@@ -96,6 +105,7 @@ const StyledProjectDetail = styled(motion.div)`
       transform: scale(1.25);
     }
   }
+
   .feature-container {
     display: flex;
     justify-content: flex-end;
